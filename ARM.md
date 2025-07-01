@@ -41,7 +41,7 @@
 - ARM uses a RISC (Reduced Instruction Set Computing) instruction set.Instructions are mostly fixed-length (32-bit), allowing simple and fast decoding.
 - Instructions performs the operations like Data processing (arithmetic, logical), Data transfer (load/store),Branching (conditional/unconditional jumps) etc..
 
-### Pipelinig 
+### Pipelining 
 - ARM processors use pipeline architecture to improve instruction throughput.
 - Pipelining splits instruction execution into multiple stages such as:
     - Fetch (get instruction from memory)
@@ -49,4 +49,9 @@
     - Execute (perform the operation)
     - Memory access (read/write data if needed)
     - Write-back (store results in registers)
-- This allows multiple instructions to be processed simultaneously at different stages, speeding up overall execution.
+- This allows multiple instructions to be processed simultaneously executes multiple instructions in parallel at different stages(fetch, decode, execute), speeding up overall execution.
+
+### Memory Mangement Unit
+- ARM includes a Memory Management Unit (MMU) for virtual memory and memory protection.
+- MMU is going to extract the page numbers from page table
+- With the help of page no and offset gives the corresponding physical frame address.
