@@ -33,6 +33,20 @@
 - Special Registors are:
   
    - Program Counter (PC): Contains the address of the next instruction to be executed.
-   - Link Register (LR): Holds the return address during subroutine or function calls.
+   - Link Register (LR): Holds the return address during function calls.
    - Stack Pointer (SP): Points to the current position in the stack.
    - Current Program Status Register (CPSR): Stores various status flags and control bits, such as the zero and carry flags.
+
+### Instruction Set
+- ARM uses a RISC (Reduced Instruction Set Computing) instruction set.Instructions are mostly fixed-length (32-bit), allowing simple and fast decoding.
+- Instructions performs the operations like Data processing (arithmetic, logical), Data transfer (load/store),Branching (conditional/unconditional jumps) etc..
+
+### Pipelinig 
+- ARM processors use pipeline architecture to improve instruction throughput.
+- Pipelining splits instruction execution into multiple stages such as:
+    - Fetch (get instruction from memory)
+    - Decode (interpret the instruction)
+    - Execute (perform the operation)
+    - Memory access (read/write data if needed)
+    - Write-back (store results in registers)
+- This allows multiple instructions to be processed simultaneously at different stages, speeding up overall execution.
