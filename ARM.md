@@ -1,11 +1,11 @@
 # ARM ARCHEITECTURE
 
-## Defination
+## Definition
 - ARM architecture refers to a family of processor architectures created and licensed by Arm Ltd.
 - It follows the RISC (Reduced Instruction Set Computing).It is designed for high performance with minimal power usage.
 - Applications like IOT devices, Smart phones and Embedded system.
 
-## Keywords before going to understand the ARM Archtecture  
+## Keywords before going to understand the ARM Archtechiture  
 - Core
 - Processor
 - RISC AND CISC
@@ -27,9 +27,9 @@
 - Memory Management Unit (MMU)
 - Interupts and Exceptions
 
-### Registors
+### Registers
 - Registers are small, high-speed storage units within the CPU that temporarily store data while instructions are being executed.
-- In ARM processors, there are usually 16 general-purpose registers labeled R0 through R15 and 4 special purpose registors.
+- In ARM processors, there are usually 16 general-purpose registers labelled R0 through R15 and 4 special purpose registors.
 - Special Registors are:
   
    - Program Counter (PC): Contains the address of the next instruction to be executed.
