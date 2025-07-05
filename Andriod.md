@@ -28,7 +28,7 @@ Is phone a completely embedded system?
 | **CPU Need**       | Simple processor                   | No high-end CPU required         |
 
 ## For any General OS stack for Embedded System
-<pre>
+```
 +-----------------------------+
 |                             |  ← It is user interface(provides functionality to the user) 
 |      Applications           |
@@ -54,3 +54,6 @@ Is phone a completely embedded system?
 |                             | 
 +-----------------------------+
 
+```
+## Note:
+A embedded system means we should not only customize the hardware but also to customize the software of user interface.
