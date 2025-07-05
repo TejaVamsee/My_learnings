@@ -17,14 +17,15 @@ Is phone a completely embedded system?
 ```
 ## Classification of Embedded systems in terms of Safety
 
-| **Feature**                             | **Safety-Critical, Non-Complex Application **      | **Non-Safety-Critical, Complex Application**     |
-|-----------------------------------------|----------------------------------------------------|--------------------------------------------------|
-| **Risk Level**                          | Failure can be dangerous to human life             | Failure does not cause harm                      |
-| **Functionality Requirement**           | Performs critical jobs                             | Can tolerate delay or failure                    |
-| **Scheduling**                          | Requires deterministic scheduling                  | No need for deterministic scheduling             |
-| **User Interaction**                    | Minimal user interaction                           | User needs to interact with the system           |
-| **System Complexity**                   | Internally handles tasks with simple logic         | Can involve more complex behavior, but not critical |
-| **Operating System**                    | Runs on FreeRTOS or Baremetal                      | Runs on Linux, Android, etc.                     |
-| **CPU Requirements**                    | Simple, efficient processor                        | No need for high-end CPU                         |
+| Feature            | Safety-Critical (Non-Complex)      | Non-Safety-Critical (Complex)     |
+|--------------------|------------------------------------|----------------------------------|
+| **Risk**           | Failure may harm human life        | Failure causes no harm           |
+| **Functionality**  | Performs essential tasks           | Non-critical tasks               |
+| **Scheduling**     | Needs deterministic timing         | Not time-sensitive               |
+| **User Input**     | Minimal interaction                | User-driven actions              |
+| **Complexity**     | Internally simple logic            | More complex but safe            |
+| **OS Type**        | FreeRTOS / Baremetal               | Linux / Android                  |
+| **CPU Need**       | Simple processor                   | No high-end CPU required         |
+
 
 
