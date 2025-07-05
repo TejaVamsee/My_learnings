@@ -27,21 +27,30 @@ Is phone a completely embedded system?
 | **OS Type**        | FreeRTOS / Baremetal               | Linux / Android                  |
 | **CPU Need**       | Simple processor                   | No high-end CPU required         |
 
-For any General OS stack for Embedded System
-
+## For any General OS stack for Embedded System
+<pre>
 +-----------------------------+
-|   Your Custom Layers        |  ← Your own apps, configs, and board support  
-|   (meta-myproject, etc.)    |
+|                             |  ← It is user interface(provides functionality to the user) 
+|      Applications           |
+|                             |         
 +-----------------------------+
-| Community/Third-Party Layers|  ← meta-raspberrypi, meta-qt5, etc.
+|                             |
+|        Services             |   ← What services/options does the mmodule provides
+|                             |   ← Ex: Camera module is used for photo and recording.
 +-----------------------------+
-|           Poky              |  ← Reference distro (includes BitBake + metadata)
+|                             |
+|        Libraries            |  ← It is a programs responsible for the task you want to perform 
+|                             |   
 +-----------------------------+
-|       BitBake Engine        |  ← Executes tasks using recipes
+|                             |
+|    System Call Interface    |  ← Bridge between the userspace and kernal space
 +-----------------------------+
-|     OpenEmbedded Core       |  ← Shared base recipes, classes, configs
+|                             |
+|        Drivers              |  ← It is a software code in kernal space used to interact with the hardware 
+|                             | 
 +-----------------------------+
-|   Source Code / Packages    |  ← Kernel, BusyBox, toolchain, libraries
+|                             |
+|       Linux Kernal          |  ← It is the OS which manages everything like memory,device files and it interacts with hardware
+|                             | 
 +-----------------------------+
-
 
