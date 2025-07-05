@@ -17,7 +17,7 @@ Is phone a completely embedded system?
 ```
 ## Classification of Embedded systems in terms of Safety
 
-| **Feature                               | **Safety-Critical, Non-Complex Application         | **Non-Safety-Critical, Complex Application       |
+| **Feature**                             | **Safety-Critical, Non-Complex Application **      | **Non-Safety-Critical, Complex Application**     |
 |-----------------------------------------|----------------------------------------------------|--------------------------------------------------|
 | **Risk Level**                          | Failure can be dangerous to human life             | Failure does not cause harm                      |
 | **Functionality Requirement**           | Performs critical jobs                             | Can tolerate delay or failure                    |
