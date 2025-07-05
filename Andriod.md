@@ -56,4 +56,6 @@ Is phone a completely embedded system?
 
 ```
 ## Note:
+<img src="/1.png" alt="Embedded System" width="400"/>
+
 A embedded system means we should not only customize the hardware but also to customize the software of user interface.
