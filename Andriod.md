@@ -17,7 +17,7 @@ Is phone a completely embedded system?
 ```
 ## Classification of Embedded systems in terms of Safety
 
-| Feature            | Safety-Critical (Non-Complex)      | Non-Safety-Critical (Complex)     |
+| Feature            | Safety-Critical (Non-Complex)      | Non-Safety-Critical (Complex)    |
 |--------------------|------------------------------------|----------------------------------|
 | **Risk**           | Failure may harm human life        | Failure causes no harm           |
 | **Functionality**  | Performs essential tasks           | Non-critical tasks               |
@@ -27,5 +27,21 @@ Is phone a completely embedded system?
 | **OS Type**        | FreeRTOS / Baremetal               | Linux / Android                  |
 | **CPU Need**       | Simple processor                   | No high-end CPU required         |
 
+For any General OS stack for Embedded System
+
++-----------------------------+
+|   Your Custom Layers        |  ← Your own apps, configs, and board support  
+|   (meta-myproject, etc.)    |
++-----------------------------+
+| Community/Third-Party Layers|  ← meta-raspberrypi, meta-qt5, etc.
++-----------------------------+
+|           Poky              |  ← Reference distro (includes BitBake + metadata)
++-----------------------------+
+|       BitBake Engine        |  ← Executes tasks using recipes
++-----------------------------+
+|     OpenEmbedded Core       |  ← Shared base recipes, classes, configs
++-----------------------------+
+|   Source Code / Packages    |  ← Kernel, BusyBox, toolchain, libraries
++-----------------------------+
 
 
