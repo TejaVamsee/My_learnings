@@ -59,3 +59,30 @@ Is phone a completely embedded system?
 <img src="/1.png" alt="Embedded System" width="400"/>
 
 A embedded system means we should not only customize the hardware but also to customize the software of user interface.
+
+## Building of Android OS
+
+```
+         ## Inputs                                                                                ## Outputs 
++-----------------------------+            +-------------+                                    
+|                             |            |             |                                    --> RoofFs Images
+|      Andriod Source code    |            |             |            +-------------+         --> Kernal Images
+|                             |            |  Build      |            |             |
++-----------------------------+            |  Engine     |            |             |          
+|                             |            | ( Bitbake)  |            |             |         --> Bootloader Images
+|    BootLoader Source Code   |    ------> |             | ------->   |  Toolchain  |         
+|                             |            |  Build      |            |  ( gcc )    |
++-----------------------------+            |  System     |            |             |
+|                             |            |(Yocto/Make) |            +-------------+         
+|       BootROM Firmware      |            |             |                                    --> BootRAM firmware
+|     ( Executable file )     |            |             |
++-----------------------------+            +-------------+             
+|                             |                                   
+|    Additional Chip Firware  |                                                               --> Additional Chip
+|    ( Bluuetooth,WIFI)       |                                                                     Firmware
++-----------------------------+                      
+```
+- The build system converts the source file/code to executable or Images or Firmware.
+- After generating the images or firmware it will be flashed into development board.
+- BootRom firmware is flased to BootROM
+- Additional Firmware is flased to Additional Chip Firmware.
