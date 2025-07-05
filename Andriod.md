@@ -9,3 +9,10 @@ An embedded system is a combination of hardware and software designed to perform
  - It typically small and compact devices.Making ideal for any industry.
  - Embedded Systems consumes less power compared to General purpose systems. 
 ```
+
+```
+Is phone a completely embedded system?
+- No, Phone is not a purely embedded system, but a complex computing device that integrates multiple embedded systems.
+- Multiple Embedded sytems means Camera Module,Display Module,Fingerprint sensor...
+```
+
