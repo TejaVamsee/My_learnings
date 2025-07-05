@@ -7,5 +7,7 @@
 
 ```
  Why Embedded System?
- -A Embedded system is nothing but a to perform some action or a task by combination of software and Hardware
+ - Embedded systems will use only the necessary components for the task.By this it will improve efficiency and cost efficient.
+ - It typically small and compact devices.Making ideal for any industry.
+ - Embedded Systems consumes less power compared to General purpose systems. 
 ```
