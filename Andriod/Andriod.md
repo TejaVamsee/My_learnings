@@ -196,3 +196,6 @@ Ex:
 <div align = "center">
     <img src="/Andriod/3.png" alt="Andriod Architecture" width="600"/>
 </div>
+
+- From above image we can see that Andriod kernal space is mostly similar to Linux Kernal space.
+- There are some additional Changes like Wavelocks,Scheduler 
