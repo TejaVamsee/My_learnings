@@ -198,5 +198,5 @@ Ex:
 </div>
 
 - From above image we can see that Andriod kernal space is mostly similar to Linux Kernal space.
-- There are some additional Changes like Wavelocks,CFS Scheduler, ashmem and there is no SysV IPC etc..
+- There are some additional Changes like Wavelocks,CFS Scheduler, ashmem, Binder and there is no SysV IPC etc..
 -  
