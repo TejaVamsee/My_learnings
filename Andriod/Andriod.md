@@ -194,5 +194,5 @@ Ex:
 # Android Archietecture
 
 <div align = "center">
-    <img src="/Andriod/3.png" alt="Andriod Architecture" width="300"/>
+    <img src="/Andriod/3.png" alt="Andriod Architecture" width="600"/>
 </div>
