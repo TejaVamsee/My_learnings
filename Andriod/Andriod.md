@@ -166,3 +166,5 @@ Ex:
  ### 8. Loging Mechanism
  - In Linux we use dmseg to see the kernal logs, journalctl for service logs.
  - In andriod we use dmesg to see the kernal logs, logcat for service logs.It uses circular buffer for writing the logs.
+
+# Example of Linux Archietecture
