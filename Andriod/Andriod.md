@@ -191,3 +191,8 @@ Ex:
 
   Step 1 to Step 4 is used to customize the software/User version, Step 5 and 6 used to customize the hardware version.
  
+# Android Archietecture
+
+<div align = "center">
+    <img src="/Andriod/3.png" alt="Andriod Architecture" width="300"/>
+</div>
