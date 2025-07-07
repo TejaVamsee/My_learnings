@@ -145,13 +145,24 @@ Linux uses OOM killer(Out of Memory)
 - It free up the memory
 
 ### 4.Sleep prone Kernal
-- When you click the lock button the phone will be off.The kernal will enter into Sleep Mode.
+- When you click the lock button the phone will be off.The kernal will enter into Sleep Mode/you can even suspend it.
 - It will also happen in linux but it is less utilized.
 
 ### 5. WakeLocks
-It is mechanism that allows an app/service to keep the device awake- either keeping CPU running, screen on when the user is not interacting.
+- You can wake the process/task from Suspended to perform the critical code.
+- It is mechanism that allows an app/service to keep the device awake- either keeping CPU running, screen on when the user is not interacting.
 Ex: 
    - playing music when screen turn off
    - Tracking GPS in fitness app.
 
- 
+###  Binder IPC
+- linux uses the System V IPC like message queues,named pipes...
+- It is a Remote procedure call based communication.It creates the server-client mechanism between the process.
+
+### Hardware Abstraction Layer
+- Proper usage of hardware Abstraction is done in Andriod i.e. usage of kernal resources.
+- Whereas in Linux you dont have much access/Much usage of hardware Layer.
+
+ ### Loging Mechanism
+ - In Linux we use dmseg to see the kernal logs, journalctl for service logs.
+ - In andriod we use dmesg to see the kernal logs, logcat for service logs.It uses circular buffer for writing the logs.
