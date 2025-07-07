@@ -187,6 +187,7 @@ Ex:
 - Kernal Drivers:
   - RFCOMM Driver: Handles Bluetooth communication over serial protocols (like virtual serial ports).
   - UART Driver: Communicates with the physical Bluetooth hardware over UART (serial port interface).
-- Bluuetooth Hardware: The actual Bluetooth chip/module (e.g., via UART) that transmits and receives data wirelessly.
-  
+- Bluetooth Hardware: The actual Bluetooth chip/module (e.g., via UART) that transmits and receives data wirelessly.
+
+  Step 1 to Step 4 is used to customize the software/User version, Step 5 and 6 used to customize the hardware version.
  
