@@ -168,4 +168,25 @@ Ex:
  - In andriod we use dmesg to see the kernal logs, logcat for service logs.It uses circular buffer for writing the logs.
 
 # Example Module of Linux Archietecture
-<img src="/Andriod/2.png" alt="Linux Archietecture" width="600"/>
+<div align = "center">
+    <img src="/Andriod/2.png" alt="Linux Architecture" width="300"/>
+</div>
+
+- Application Layer:
+    - It is a user-space application that interacts with Bluetooth functionality.
+    - Ex: bluetoothctl — a CLI tool to configure and control Bluetooth devices.
+- Services:
+    - Inter-Process Communication is used to communicate with system services.
+    - A service that manages device discovery, pairing, etc.
+- Libraries:
+  - The service uses a Bluetooth library, such as the one provided by BlueZ (Linux Bluetooth protocol stack).
+  - This is application-level logic written in C, providing APIs to manage Bluetooth.
+- System Call Layer:
+  - Functions like open(), read(), write(), ioctl(), and poll() are Linux system calls.
+  - These bridge user space and kernel space, allowing access to hardware via drivers.
+- Kernal Drivers:
+  - RFCOMM Driver: Handles Bluetooth communication over serial protocols (like virtual serial ports).
+  - UART Driver: Communicates with the physical Bluetooth hardware over UART (serial port interface).
+- Bluuetooth Hardware: The actual Bluetooth chip/module (e.g., via UART) that transmits and receives data wirelessly.
+  
+ 
