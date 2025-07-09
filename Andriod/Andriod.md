@@ -212,10 +212,12 @@ Ex:
  #### Sysytem Applications
  - System apps are essential for the basic functioning of the device.
  - They handle core operations like calling, messaging, managing settings, and using the camera.
+ - It can access directly to HAL layer by using the system calls like android.system.featurename
 
 #### User Applications
  - Apps installed from the playStore or AppStore.
  - Installed by the user to add extra features and perform specific tasks like communication, social networking, media, and productivity.
+ - To access the HAL layer you have to follow the software stack of Android.
 
 #### Privileged Applications
  - Privileged apps have additional permissions that regular apps don’t have.
@@ -228,8 +230,17 @@ Ex:
 - These APIs allow developers to build apps that can interact with the Android system and access various features such as the camera, location services, sensors,   file storage, without needing to directly control the underlying hardware.
 
 ### Android FrameWork
-- Application uses Android APIs in order to communicate Android framework.
-<div align = "center">
-  <img src="/Andriod/Andriod_frameWork1.png" alt="Andriod Framework" width="600"/>
-</div> 
- 
+ <img src="/Andriod/Andriod_frameWork1.png" alt="Andriod Framework" width="600"/>
+
+- Application uses Android APIs in order to communicate Android framework i.e.(classes). 
+- The Android Framework will receives an request and assign the appropriate system services.
+- The system services consists of Activity Manager,Notification Manager,Tephone Mangager etc...
+- The Android frame only defines what action it has to perform.If you want to click the photo it has to access the hardware using HAL layer.
+- This layer is wriiten in Java/kotlin and can be called as Java framework.
+
+### Android RunTime Layer
+- This layer is divided into Core Libraries and Dalvik Virtual Machines.
+- The core Library package contains the APIs like Basic Classes, utilities(androi.util), File Access(java.io), Network Access(HTTPs,TCP), Clib...
+- Basically Android Runtime/Dalvik Virtual Machines will convert the all these into .dex files
+- 
+
