@@ -229,7 +229,5 @@ Ex:
 
 ### Android FrameWork
 - Application uses Android APIs in order to communicate Android framework.
- <div align = "center">
-    <img src="/Andriod/3.png" alt="Andriod Architecture" width="600"/>
- </div>
+<img src="/Andriod/3.png" alt="Andriod Architecture" width="600"/>
  
