@@ -199,4 +199,37 @@ Ex:
 
 - From above image we can see that Andriod kernal space is mostly similar to Linux Kernal space.
 - There are additional Changes like Wavelocks,CFS Scheduler,ashmem contains BinderIPC and there is no SysV IPC etc..
--  
+
+**Lets Understand the UserSpace or Software Stack of the Android Archeitecture**
+
+### Application Layer
+- The Application Layer is the topmost layer in the Android architecture. It includes all the apps that the user interacts with — both system apps (preinstalled) and user apps (downloaded).
+- Applications are divided into 3 different categories.
+   - System Applications
+   - User Applications
+   - Privileged Applications
+ 
+ #### Sysytem Applications
+ - System apps are essential for the basic functioning of the device.
+ - They handle core operations like calling, messaging, managing settings, and using the camera.
+
+#### User Applications
+ - Apps installed from the playStore or AppStore.
+ - Installed by the user to add extra features and perform specific tasks like communication, social networking, media, and productivity.
+
+#### Privileged Applications
+ - Privileged apps have additional permissions that regular apps don’t have.
+ - They can access restricted APIs and perform actions that are usually blocked for normal apps. These are usually installed by the manufacturer.
+ - Ex: SIM ToolKit, System Updater, Themes ,Security etc...
+
+### Android API's
+- An Android API (Application Programming Interface) is a collection of predefined code libraries provided by the Android operating system.
+- These tools include pre-written code for common tasks like sending messages, playing music, or using GPS.
+- These APIs allow developers to build apps that can interact with the Android system and access various features such as the camera, location services, sensors,   file storage, without needing to directly control the underlying hardware.
+
+### Android FrameWork
+- Application uses Android APIs in order to communicate Android framework.
+ <div align = "center">
+    <img src="/Andriod/3.png" alt="Andriod Architecture" width="600"/>
+ </div>
+ 
