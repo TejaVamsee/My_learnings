@@ -244,6 +244,8 @@ Ex:
 - Basically Android Runtime/Dalvik Virtual Machines will convert the all these into .dex files
 
 ### Dalvik Virtual Machines
+ <img src="/Andriod/DVM.png" alt="Andriod Framework" width="200"/>
+ 
 - Dalvik Virtual Machine Register Based VM.It provides the environment in which every Android application runs.
 - Dalvik has been written such that a device can run multiple Virtual Machines efficiently.
 - .java ---> .class(byte code) ---> .dex
