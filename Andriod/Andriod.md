@@ -244,10 +244,19 @@ Ex:
 - Basically Android Runtime/Dalvik Virtual Machines will convert the all these into .dex files
 
 ### Dalvik Virtual Machines
- <img src="/Andriod/DVM.png" alt="Andriod Framework" width="200"/>
+
+ <img src="/Andriod/DVM.png" alt="Andriod Framework" width="350"/>
  
 - Dalvik Virtual Machine Register Based VM.It provides the environment in which every Android application runs.
-- Dalvik has been written such that a device can run multiple Virtual Machines efficiently.
-- .java ---> .class(byte code) ---> .dex
-- .java code will be similar to public/private classes in C++ and .class will be similar to Assembly code and .dex will be similar to register based in CPU(v0,v1 and v2 will created)
-- For every Application a separate virtual machines will be created.Since we have different virtual machines, even one appication crashes it will not affect the other applications.   
+- Dalvik has been written such that a device can run multiple Virtual Machines efficiently.It uses multithreading concepts.
+- . java ---> . class(byte code) ---> . dex ---> Application Lauch 
+- It uses Dx tools to convert . class to . dex
+- Dalvik, starting from Android 2.2, included a JIT compiler that translates bytecode into machine code at runtime to improve performance.
+- . java code will be similar to public/private classes in C++ and .class will be similar to Assembly code and .dex will be similar to register based in CPU(v0,v1 and v2 will created).By compressing it 60% of memory is saved.
+- For every Application a separate virtual machines will be created.Since we have different virtual machines, even one appication crashes it will not affect the other applications.
+
+### Android Run time
+- ART replaced Dalvik starting from Android 5.0 as the default runtime.
+- . java ---> . class(byte code) ---> . dex this is the common process for Android Runtime
+- In Runtime ART it uses AOT(Ahead of time) it converts into .oat file (i.e. transulates into machinecode(decode)) so it can executes fastly and lauches the   application
+- .java ---> .class(byte code) ---> .dex ---> .oat ---> Application Launch.
