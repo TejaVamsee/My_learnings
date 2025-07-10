@@ -242,5 +242,10 @@ Ex:
 - This layer is divided into Core Libraries and Dalvik Virtual Machines.
 - The core Library package contains the APIs like Basic Classes, utilities(androi.util), File Access(java.io), Network Access(HTTPs,TCP), Clib...
 - Basically Android Runtime/Dalvik Virtual Machines will convert the all these into .dex files
-- 
 
+### Dalvik Virtual Machines
+- Dalvik Virtual Machine Register Based VM.It provides the environment in which every Android application runs.
+- Dalvik has been written such that a device can run multiple Virtual Machines efficiently.
+- .java ---> .class(byte code) ---> .dex
+- .java code will be similar to public/private classes in C++ and .class will be similar to Assembly code and .dex will be similar to register based in CPU(v0,v1 and v2 will created)
+- For every Application a separate virtual machines will be created.Since we have different virtual machines, even one appication crashes it will not affect the other applications.   
