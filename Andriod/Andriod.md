@@ -276,3 +276,4 @@ Ex:
 - If not it tells zygote create the virtual machine to whatsapp or youtube.
 - The parent Zygote returns to waiting for the next request.
 
+### Hardware Abstraction Layer
