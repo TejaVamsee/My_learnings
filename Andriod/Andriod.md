@@ -238,6 +238,12 @@ Ex:
 - The Android frame only defines what action it has to perform.If you want to click the photo it has to access the hardware using HAL layer.
 - This layer is wriiten in Java/kotlin and can be called as Java framework.
 
+**Note: There are deamon process in System Services.The zygote initilizes these deamons**
+ 1) installd ---> for installing applications
+ 2) vold ---> deleting and measuring volume partitions in android.
+ 3) adbd ---> Android debug Deamon
+ 4) update_engine ---> Over the air update
+
 ### Android RunTime Layer
 - This layer is divided into Core Libraries and Dalvik Virtual Machines.
 - The core Library package contains the APIs like Basic Classes, utilities(androi.util), File Access(java.io), Network Access(HTTPs,TCP), Clib...
@@ -277,3 +283,4 @@ Ex:
 - The parent Zygote returns to waiting for the next request.
 
 ### Hardware Abstraction Layer
+- 
