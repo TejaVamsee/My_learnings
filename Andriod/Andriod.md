@@ -260,3 +260,19 @@ Ex:
 - . java ---> . class(byte code) ---> . dex this is the common process for Android Runtime
 - In Runtime ART it uses AOT(Ahead of time) it converts into .oat file (i.e. transulates into machinecode(decode)) so it can executes fastly and lauches the   application
 - .java ---> .class(byte code) ---> .dex ---> .oat ---> Application Launch.
+
+### Zygote
+- Zygote is a mother of all applications services
+- Zygote is a daemon process that starts by init in the Android boot process.
+  
+#### Responsibilities
+- When Zygote is started first it will spawns the system services.And the system server spawns the other system services.
+- It preloads the process and resources in Android Frameworks and Services.
+- Zygote is responsible to start all the applications.
+
+#### APP Launch
+- Zygote does not run the apps itself. It only creates (forks) new processes for each app.
+- Launcher -> In Activity manager checks the app is suspended or terminated.If it is suspended it resumes it.
+- If not it tells zygote create the virtual machine to whatsapp or youtube.
+- The parent Zygote returns to waiting for the next request.
+
