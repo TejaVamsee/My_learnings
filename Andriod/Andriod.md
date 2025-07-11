@@ -286,4 +286,7 @@ Ex:
 - HAL (Hardware Abstraction Layer) acts as a bridge between the Android user space (application framework) and the kernel space (Linux kernel and device drivers).
 - By the name, it abstracts hardware-specific details from the Android framework and applications. 
 - HAL is implemented Low level Language which includes C/C++ and its compiled form is stored in shared object files (.so)
-- HAL modules follow predefined interfaces defined by Android, and each hardware component has its own HAL module (e.g., camera HAL, audio HAL, sensors HAL) 
+- HAL modules follow predefined interfaces defined by Android, and each hardware component has its own HAL module (e.g., camera HAL, audio HAL, sensors HAL)
+
+**Android Framework in order to communicates with HAL layer it uses HIDL and AIDL**
+
