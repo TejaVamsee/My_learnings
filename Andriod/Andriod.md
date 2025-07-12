@@ -293,4 +293,9 @@ Ex:
  - From Android 8 to Android 10 HIDL primarily facilitates communication between the Hardware Abstraction Layer (HAL) and the Android framework.
  - After Android 10+ AIDL focuses on inter-process communication (IPC) within the Android system i.e.Binder IPC, including communication between the framework and HALs.
  - The funtionality wise both AIDL and HIDL 
- - 
+
+**Major Difference AIDL and HIDL**
+- AIDL uses a Java-like syntax to define interfaces.HIDL uses Custom IDL syntax for implemetation it uses C++.
+- AIDL (Android Interface Definition Language) uses only Binder IPC for interprocess communication.
+- HIDL (HAL Interface Definition Language) supports both Binder IPC and passthrough modes for interprocess communication. While Binder IPC in HIDL provides secure communication, the passthrough mode allows direct method calls without the overhead of IPC.
+- 
