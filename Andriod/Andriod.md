@@ -305,4 +305,4 @@ Client process --> direct method calls --> HAL
 ```
 
 ## Example of Android Archieteture
-<img width="278" height="513" alt="image" src="https://github.com/user-attachments/assets/966a55ed-8d9a-4328-827f-ce9b3393cec8" />
+<img width="230" height="413" alt="image" src="https://github.com/user-attachments/assets/966a55ed-8d9a-4328-827f-ce9b3393cec8" />
