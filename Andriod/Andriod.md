@@ -298,4 +298,9 @@ Ex:
 - AIDL uses a Java-like syntax to define interfaces.HIDL uses Custom IDL syntax for implemetation it uses C++.
 - AIDL (Android Interface Definition Language) uses only Binder IPC for interprocess communication.
 - HIDL (HAL Interface Definition Language) supports both Binder IPC and passthrough modes for interprocess communication. While Binder IPC in HIDL provides secure communication, the passthrough mode allows direct method calls without the overhead of IPC.
-- 
+
+```
+Client process --> Binder IPC --> HAL process 
+Client process --> direct method calls --> HAL
+```
+
