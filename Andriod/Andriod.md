@@ -306,3 +306,9 @@ Client process --> direct method calls --> HAL
 
 ## Example of Android Archieteture
 <img width="230" height="413" alt="image" src="https://github.com/user-attachments/assets/966a55ed-8d9a-4328-827f-ce9b3393cec8" />
+
+- Previleged Application requests deep sleep request Android Framework through AIDL.
+- Request goes through the Power Management Service and Car Power Management Service.
+- Passed to the Power Management HAL via HIDL.
+- HAL calls enter_deep_sleep().
+- PMIC Driver and I2C drivers execute to go to deep sleep at the hardware level.
