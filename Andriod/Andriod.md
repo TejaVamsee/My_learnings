@@ -289,5 +289,8 @@ Ex:
 - HAL modules follow predefined interfaces defined by Android, and each hardware component has its own HAL module (e.g., camera HAL, audio HAL, sensors HAL)
 
 **Android Framework in order to communicates with HAL layer it uses HIDL and AIDL**
- - HIDL primarily facilitates communication between the Hardware Abstraction Layer (HAL) and the Android framework.
- - While AIDL focuses on inter-process communication (IPC) within the Android system, including communication between the framework and HALs
+ - Before Android 8 we use in process communication calls dlopen() + dlsym().
+ - From Android 8 to Android 10 HIDL primarily facilitates communication between the Hardware Abstraction Layer (HAL) and the Android framework.
+ - After Android 10+ AIDL focuses on inter-process communication (IPC) within the Android system i.e.Binder IPC, including communication between the framework and HALs.
+ - The funtionality wise both AIDL and HIDL 
+ - 
