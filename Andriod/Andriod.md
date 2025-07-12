@@ -304,3 +304,5 @@ Client process --> Binder IPC --> HAL process
 Client process --> direct method calls --> HAL
 ```
 
+## Example of Android Archieteture
+<img width="278" height="713" alt="image" src="https://github.com/user-attachments/assets/966a55ed-8d9a-4328-827f-ce9b3393cec8" />
