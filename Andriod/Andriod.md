@@ -312,3 +312,9 @@ Client process --> direct method calls --> HAL
 - Passed to the Power Management HAL via HIDL.
 - HAL calls enter_deep_sleep().
 - PMIC Driver and I2C drivers execute to go to deep sleep at the hardware level.
+
+## Booting process
+### linux
+- 
+### Android
+- 
