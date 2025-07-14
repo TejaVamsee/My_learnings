@@ -315,6 +315,33 @@ Client process --> direct method calls --> HAL
 
 ## Booting process
 ### linux
-- 
+```
++-----------------------------+
+|                             |  ← Bootcode or firmware is stored in EEPROM/ROM. 
+|        Bootcode             |  ← It's written in low-level code (assembly, C)
+|                             |         
++-----------------------------+
+|                             |
+|         Powerup             |   ← Bootcode is the first code executed by the CPU.
+|                             |  
++-----------------------------+
+|                             |
+|        Bootloader           |  ← Bootloader is present in Non-volatile memory
+|                             |   
++-----------------------------+
+|                             |
+|    System Call Interface    |  ← Bridge between the userspace and kernal space
++-----------------------------+
+|                             |
+|        Drivers              |  ← It is a software code in kernal space used to interact with the hardware 
+|                             | 
++-----------------------------+
+|                             |
+|       Linux Kernal          |  ← It is the OS which manages everything like memory,device files and it interacts with hardware
+|                             | 
++-----------------------------+
+
+```
+
 ### Android
 - 
