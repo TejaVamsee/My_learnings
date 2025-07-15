@@ -212,7 +212,6 @@ Ex:
  #### Sysytem Applications
  - System apps are essential for the basic functioning of the device.
  - They handle core operations like calling, messaging, managing settings, and using the camera.
- - It can access directly to HAL layer by using the system calls like android.system.featurename
 
 #### User Applications
  - Apps installed from the playStore or AppStore.
