@@ -211,12 +211,15 @@ Ex:
  
  #### Sysytem Applications
  - System apps are essential for the basic functioning of the device.
- - They handle core operations like calling, messaging, managing settings, and using the camera.
+ - They handle core operations like calling, messaging, managing settings,System UI etc.
+ - This cannot be uninstalled by regular users.
+ - It has system level permissions and information present in /system/permissions/priv-app.xml
+ - Ex: App install & Management,System security & Configuration like brightness,ringtones,Network & connectivity, Device Hardwares & sensors. 
 
 #### User Applications
  - Apps installed from the playStore or AppStore.
  - Installed by the user to add extra features and perform specific tasks like communication, social networking, media, and productivity.
- - To access the HAL layer you have to follow the software stack of Android.
+ - It can access only the public APIs
 
 #### Privileged Applications
  - Privileged apps have additional permissions that regular apps don’t have.
