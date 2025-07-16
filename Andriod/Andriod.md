@@ -246,6 +246,8 @@ Ex:
  3) adbd ---> Android debug Deamon
  4) update_engine ---> Over the air update
 
+<link src = "https://general-pusher-cms.s3.amazonaws.com/tutorial/constraint_Layout_2_chain_weight_2_76b73ec721.gif">
+
 ### Android RunTime Layer
 - This layer is divided into Core Libraries and Dalvik Virtual Machines.
 - The core Library package contains the APIs like Basic Classes, utilities(androi.util), File Access(java.io), Network Access(HTTPs,TCP), Clib...
