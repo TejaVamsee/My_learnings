@@ -321,8 +321,9 @@ Client process --> direct method calls --> HAL
 ### linux
 ```
 +-----------------------------+
+|                             |  ← Bootcode is the very first code that runs when a device is powered on.
 |                             |  ← Bootcode or firmware is stored in EEPROM/ROM. 
-|        Bootcode             |  ← It's written in low-level code (assembly, C)
+|        Bootcode             |  ← It initializes basic hardware components like the CPU, memory controller, and I/O subsystems.
 |                             |         
 +-----------------------------+
 |                             |
@@ -334,14 +335,14 @@ Client process --> direct method calls --> HAL
 |                             |   
 +-----------------------------+
 |                             |
-|    System Call Interface    |  ← Bridge between the userspace and kernal space
+|       Linux Kernal          |  ← 
 +-----------------------------+
 |                             |
-|        Drivers              |  ← It is a software code in kernal space used to interact with the hardware 
+|      Linux Userspace        |  ←  
 |                             | 
 +-----------------------------+
 |                             |
-|       Linux Kernal          |  ← It is the OS which manages everything like memory,device files and it interacts with hardware
+|       Application           |  ← 
 |                             | 
 +-----------------------------+
 
