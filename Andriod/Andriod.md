@@ -321,31 +321,34 @@ Client process --> direct method calls --> HAL
 ### linux
 ```
 +-----------------------------+
-|                             |  ← Bootcode or firmware is stored in EEPROM/ROM. 
-|        Bootcode             | 
+|                             |   ← Bootcode or firmware is stored in EEPROM/ROM. 
+|        Bootcode             |   ← Responsible for initializing hardware: RAM, CPU, keyboard, timers, etc.
 |                             |         
 +-----------------------------+
 |                             |   ← The CPU is reset.The Program Counter (PC)  maps to firmware ROM (boot code).
 |         Powerup             |   ← Bootcode is the very first code that executes when a device is powered on.
-|                             |   ← Boot code initilizes the RAM,Keyboard,timers and other hardware componets
+|                             |   ← It loads the bootloader.
++-----------------------------+
+|                             |   ← Bootloader is divided into primary bootloader,Secondary bootloader and tertiary bootloader 
+|        Bootloader           |   ← Roles: > Sets the minimum hardware like to enable access to RAM, Initializing basic input/output ports and initilization of kernal .
+|                             |            > It provides for user the Boot menu which OS or kernal menu to load.           
+|                             |            > Loads the Linux kernel and initilization of drivers into RAM
++-----------------------------+
+|                             |   ← The kernel is the core of the operating system.
+|       Linux Kernal          |   ← It sets up CPU scheduling, memory management, device drivers.
+|                             |   ← It starts the first userspace process
 +-----------------------------+
 |                             |
-|        Bootloader           |  ← Bootloader is present in Non-volatile memory
-|                             |   
+|      Linux Userspace        |   ←  The init process invokes the remaining process
+|                             |   ←  It runs the daemons process,background services etc..
 +-----------------------------+
 |                             |
-|       Linux Kernal          |  ← 
-+-----------------------------+
-|                             |
-|      Linux Userspace        |  ←  
-|                             | 
-+-----------------------------+
-|                             |
-|       Application           |  ← 
+|       Application           |   ← By entering the Password to username you access the applications like terminal,browser etc..
 |                             | 
 +-----------------------------+
 
 ```
 
 ### Android
+
 - 
