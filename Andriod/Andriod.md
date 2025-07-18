@@ -351,4 +351,5 @@ Client process --> direct method calls --> HAL
 
 ### Android
 
-- 
+- <img width="736" height="475" alt="image" src="https://github.com/user-attachments/assets/a06012ad-92f1-414f-8299-0854218857ae" />
+
