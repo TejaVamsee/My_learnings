@@ -321,14 +321,13 @@ Client process --> direct method calls --> HAL
 ### linux
 ```
 +-----------------------------+
-|                             |  ← Bootcode is the very first code that runs when a device is powered on.
 |                             |  ← Bootcode or firmware is stored in EEPROM/ROM. 
-|        Bootcode             |  ← It initializes basic hardware components like the CPU, memory controller, and I/O subsystems.
+|        Bootcode             | 
 |                             |         
 +-----------------------------+
-|                             |
-|         Powerup             |   ← Bootcode is the first code executed by the CPU.
-|                             |  
+|                             |   ← The CPU is reset.The Program Counter (PC)  maps to firmware ROM (boot code).
+|         Powerup             |   ← Bootcode is the very first code that executes when a device is powered on.
+|                             |   ← Boot code initilizes the RAM,Keyboard,timers and other hardware componets
 +-----------------------------+
 |                             |
 |        Bootloader           |  ← Bootloader is present in Non-volatile memory
